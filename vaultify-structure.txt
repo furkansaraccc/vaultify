@@ -1,0 +1,63 @@
+.
+├── .next                    # Next.js build output directory (auto-generated)
+├── .vscode                  # VSCode editor configuration
+├── app/                     # Next.js 13+ App Router directory
+│   ├── (auth)/             # Grouped authentication routes (soft navigation boundary)
+│   │   ├── login/          # Login page route
+│   │   └── register/       # Registration page route
+│   ├── api/                # API routes directory
+│   │   ├── auth/           # Authentication API endpoints
+│   │   ├── user/           # User management API endpoints
+│   │   └── vault/          # Secure storage API endpoints
+│   ├── dashboard/          # Dashboard page route
+│   ├── reports/            # Reports page route
+│   ├── security/           # Security settings page route
+│   ├── settings/           # User settings page route
+│   ├── vault/share/        # Vault sharing page route
+│   ├── error-handler.tsx   # Global error handling component
+│   ├── layout.tsx          # Root layout component (applies to all routes)
+│   └── page.tsx            # Home page component
+├── components/             # Reusable React components
+│   ├── features/           # Feature-specific components
+│   │   ├── Features.tsx    # Features showcase component
+│   │   └── SecurityInfo.tsx # Security information display component
+│   ├── layout/            # Layout-related components
+│   │   ├── ErrorFallback  # Error boundary fallback component
+│   │   ├── Footer         # Global footer component
+│   │   ├── Navbar         # Navigation bar component
+│   │   └── TailwindIndicator # Development screen size indicator
+│   └── ui/                # Generic UI components
+│       ├── Alert          # Alert/notification component
+│       ├── Button         # Reusable button component
+│       ├── Card           # Card container component
+│       └── tooltip        # Tooltip component
+├── lib/                   # Utility functions and configurations
+│   ├── auth.ts            # Authentication utilities
+│   ├── constants.ts       # Global constants and configuration
+│   ├── db.ts              # Database client configuration
+│   ├── encryption.ts      # Encryption utilities
+│   ├── prisma.ts          # Prisma client configuration
+│   └── utils.ts           # General utility functions
+├── node_modules/          # Project dependencies (auto-generated)
+├── prisma/               # Prisma ORM configuration
+│   └── schema.prisma     # Database schema definition
+├── public/               # Static assets
+│   ├── favicon.ico       # Website favicon
+│   └── manifest.json     # PWA manifest file
+├── styles/               # Global styles
+│   └── globals.css       # Global CSS styles
+├── types/                # TypeScript type definitions
+│   └── index.d.ts        # Global type declarations
+├── .gitignore           # Git ignore rules
+├── .stylelintrc.js       # Style linting configuration
+├── .env.mjs             # Environment variables schema
+├── eslint.config.mjs    # ESLint configuration
+├── next-env.d.ts        # Next.js TypeScript declarations
+├── next.config.d.ts     # Next.js config type definitions
+├── next.config.ts       # Next.js configuration file
+├── package.json         # Project dependencies and scripts
+├── postcss.config.ts    # PostCSS configuration
+├── README.md            # Project documentation
+├── tailwind.config.ts   # Tailwind CSS configuration
+├── tsconfig.json        # TypeScript configuration
+└── yarn.lock            # Yarn dependency lock file
